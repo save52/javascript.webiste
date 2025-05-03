@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <h1 style="text-decoration: underline;text-align: center; color: rgb(255,0,0);">Programs on Javascript</h1>
+    <h3 id="good">Javascript can Change HTML attribute</h3> <!--if the is removed, it display HTML write up--> 
+    <script type="text/Javascript" src="app.js"></script>
+
+
+
+    <h3 style="text-decoration: underline;text-align: center; color: rgb(255,0,0);">Triangle Perimeter Calculator</h3>
+    <button onclick="Calculateperimeter()">Calculate Perimeter</button>
+    <p id="result"></p>
+    <script>
+        function Calculateperimeter(){
+            let sideA=parseFloat(prompt("Enter the length sideA:"));
+            let sideB=parseFloat(prompt("Enter the length sideB:"));
+            let sideC=parseFloat(prompt("Enter the length sideC:"));
+
+            if (isNaN(sideA) || isNaN(sideB) || isNaN(sideC)){
+                document.getElementById("result").innerText="Please enter valid numbers";
+                return;
+            }
+        perimeter=sideA + sideB + sideC
+        document.getElementById("result").innerText="Perimeter is: " + perimeter
+        }
+    </script>
+
+    
+</body>
+</html>
